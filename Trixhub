@@ -1,1 +1,24 @@
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Trix hub injected"; 
+    Text = "Thank you for using trix hub :D"; 
+    Icon = "4998267442"; 
+    Duration = 5;
+    Callback = bindableFunction;
+    Button1 = "";  
+    Button2 = "";
+})
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Trixhub V2", "DarkTheme")
+local Tab = Window:NewTab("utilitys")
+local Section = Tab:NewSection("FE admin commands")
 
+Section:NewButton("Infinite yeild", "Gives you Infiniteyeild", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+Section:NewButton("Reviez admin", "Gives you Reviez admin", function()
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/Caniwq2N"))()
+end)
+local Section = Tab:NewSection("Moblie scripts")
+Section:NewButton("Fly moblie", "V2 fly", function()
+    print("a")
+end)
