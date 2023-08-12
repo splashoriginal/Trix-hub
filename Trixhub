@@ -1,6 +1,6 @@
 game.StarterGui:SetCore("SendNotification", {
 	Title = "Quantum hub injected"; 
-	Text = "Thank you for using quantum hub :D"; 
+	Text = "Thank you for using quantum hub :DD"; 
 	Icon = "rbxassetid://4998267442"; 
 	Duration = 5;
 	Callback = bindableFunction;
