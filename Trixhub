@@ -1,1 +1,108 @@
+game.StarterGui:SetCore("SendNotification", {
+	Title = "Quantum hub injected"; 
+	Text = "Thank you for using quantum hub :D"; 
+	Icon = "rbxassetid://4998267442"; 
+	Duration = 5;
+	Callback = bindableFunction;
+	Button1 = ""; 	Button2 = "";
+})
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Trixhub V2 (renamed)", "DarkTheme")
+local Tab = Window:NewTab("Best Hubs")
+local Tab2 = Window:NewTab("LocalPlayer")
+local Tab3 = Window:NewTab("Admin Scripts")
+local Tab4 = Window:NewTab("Game Hubs")
+local Tab5 = Window:NewTab("Mobile Scripts")
+local Tab6 = Window:NewTab("Settings")
+local Tab7 = Window:NewTab("FE scripts")
+local Tab8 = Window:NewTab("Backdoor")
+local Section = Tab3:NewSection("Admin Scripts")
+local Section2 = Tab2:NewSection("LocalPlayer")
+local Section3 = Tab4:NewSection("Game hubs")
+local Section4 = Tab:NewSection("Best hubs")
+local Section5 = Tab5:NewSection("Mobile Scripts")
+local Section6 = Tab6:NewSection("Settings")
+local Section7 = Tab7:NewSection("FE scripts")
+local Section8 = Tab8:NewSection("Backdoor")
+
+
+Section:NewButton("Infinite yield", "Gives you Infinite yield", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+Section:NewButton("Reviez admin", "Gives you Reviez admin", function()
+	loadstring(game:HttpGetAsync("https://pastebin.com/raw/Caniwq2N"))()
+end)
+
+Section5:NewButton("Mobile Fly", "Makes it so you can fly on mobile", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Snacctrix/FlyUiV2/main/Trixflyui%22"))()
+end)
+
+Section5:NewButton("Computer Keybinds", "Makes it so you can type computer keys for keybinds", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+end)
+
+Section7:NewButton("Computer Keybinds 2", "If you want a nicer looking and bigger gui (if you dont have a computer)", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/Keyboardv3/main/mobKeyboard"))()
+end)
+
+Section3:NewButton("Owl Hub", "Works best for arsenal", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))()
+end)
+
+
+Section4:NewButton("Sirius", "Best hub on quantom hub, works for moblie!", function()
+	loadstring(game:HttpGet('https://sirius.menu/sirius'))()
+end)
+
+Section3:NewButton("V.G Hub", "Has alot of games", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+end)
+
+Section7:NewButton("Fe Friend", "A new friend :D", function()
+	loadstring(game:HttpGet('https://pastebin.com/raw/cf147gQL'))()
+end)
+
+
+Section7:NewButton("Fe Ghost", "Gives ghost tool that makes you invisible when used", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/uUtRsAX5"))()
+end)
+
+Section7:NewButton("Fe ender", "(SUPER RARE) (no fling) (no hats) people confused how your punching not effects", function()
+	loadstring(game:HttpGet(('https://pastebin.com/rYKW4TV6'),true))()
+end)
+
+Section7:NewButton("Fe Trolling Gui", "Troll and annoy people with this", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/mFuVD2UX"))()
+end)
+
+Section7:NewButton("Fe Chat Controller v2", "Be someones brain", function()
+	loadstring(game:HttpGet("https://controlc.com/14810e6f"))()
+end)
+
+Section7:NewButton("Fe Player Lifter (funny)", "You can kinda lift players when they arent moving", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/scripts-3/main/player%20lifter.lua"))()
+end)
+
+Section7:NewButton("Fe Dog (funny)", "HATS:--https://www.roblox.com/catalog/48474313/Red-Roblox-Cap--https://www.roblox.com/catalog/62724852/Chestnut-Bun--https://www.roblox.com/catalog/451220849/Lavender-Updo--https://www.roblox.com/catalog/48474294/ROBLOX-Girl-Hair--https://www.roblox.com/catalog/4047554959/International-Fedora-Brazil--https://www.roblox.com/catalog/63690008/Pal-Hair--https://www.roblox.com/catalog/62234425/Brown-Hair", function()
+	loadstring(game:HttpGet(('https://pastebin.com/VRyNi6N1'),true))()
+end)
+
+Section7:NewButton("Fe Hat Dragon", "Makes you a flying snake/dragon(Any Hats)", function()
+	loadstring(game:HttpGet(('https://pastebin.com/kisNgdkY'),true))()
+end)
+
+Section7:NewButton("Fe Charactor Creator", "Create An Avatar Of Your Dreams With Your Accesories", function()
+	loadstring(game:HttpGet(('https://pastebin.com/rTGHpWTG'),true))()
+end)
+
+Section8:NewButton("Backdoor", "Backdoor SS", function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
+end)
+
+
+Section6:NewKeybind("Keybind", "Defult Keybind", Enum.KeyCode.Z, function()
+	Library:ToggleUI()
+end)
+
 
