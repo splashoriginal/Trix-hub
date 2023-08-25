@@ -392,8 +392,8 @@ Section3:NewButton("Big paintball", "??? ", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Snacctrix/Big-paintball/main/Trix"))()
 end)
 
-Section3:NewButton("ButtonText", "ButtonInfo", function()
-    print("Clicked")
+Section3:NewButton("MM2 [BETTER AND OP]", "lunarhub OPP", function()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/vwSaraa/LunarHub/main/mm2"))()
 end)
 
 Section3:NewButton("ButtonText", "ButtonInfo", function()
